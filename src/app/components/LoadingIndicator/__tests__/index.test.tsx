@@ -5,10 +5,7 @@ import { LoadingIndicator } from '../index';
 import { themes } from 'styles/theme/themes';
 import { DefaultTheme, ThemeProvider } from 'styled-components';
 
-const renderWithTheme = (
-  props: Parameters<typeof LoadingIndicator>[number] = {},
-  theme?: DefaultTheme,
-) =>
+const renderWithTheme = (props: Parameters<typeof LoadingIndicator>[number] = {}, theme?: DefaultTheme) =>
   render(
     <ThemeProvider theme={theme || themes.light}>
       <LoadingIndicator {...props} />
@@ -28,8 +25,6 @@ describe('<LoadingIndicator />', () => {
 
   it('should have theme', () => {
     const loadingIndicator = renderWithTheme();
-    expect(loadingIndicator.container.querySelector('circle')).toHaveStyle(
-      `stroke: ${themes.light.primary}`,
-    );
+    expect(loadingIndicator.container.querySelector('circle')).toHaveStyle(`stroke: ${themes.light.primary}`);
   });
 });

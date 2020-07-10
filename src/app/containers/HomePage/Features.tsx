@@ -29,10 +29,8 @@ export function Features() {
     <>
       <Title as="h2">Features</Title>
       <Lead>
-        Crafted for <strong>highly scalable</strong>,{' '}
-        <strong>easily maintainable</strong> and{' '}
-        <strong>highly performant</strong> React.js applications with a focus on{' '}
-        <strong>best DX</strong> and <strong>best practices</strong>.
+        Crafted for <strong>highly scalable</strong>, <strong>easily maintainable</strong> and <strong>highly performant</strong> React.js
+        applications with a focus on <strong>best DX</strong> and <strong>best practices</strong>.
       </Lead>
       <List>
         <Feature>
@@ -40,27 +38,16 @@ export function Features() {
           <Content>
             <SubTitle>Predictable State</SubTitle>
             <P>
-              Build easy to test and debug, flexible and extensible applications
-              using{' '}
-              <A
-                href="https://redux.js.org/basics/usage-with-react"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              Build easy to test and debug, flexible and extensible applications using{' '}
+              <A href="https://redux.js.org/basics/usage-with-react" target="_blank" rel="noopener noreferrer">
                 Redux
               </A>
-              . Unidirectional data flow allows for change logging and time
-              travel debugging.{' '}
-              <A
-                href="https://github.com/zalmoxisus/redux-devtools-extension"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              . Unidirectional data flow allows for change logging and time travel debugging.{' '}
+              <A href="https://github.com/zalmoxisus/redux-devtools-extension" target="_blank" rel="noopener noreferrer">
                 Install Chrome Redux Dev Tools
               </A>{' '}
-              to see how your application's state changes and travel in time to
-              debug. Type any github username below and see it in action with
-              Redux Dev Tools.
+              to see how your application's state changes and travel in time to debug. Type any github username below and see it in action
+              with Redux Dev Tools.
             </P>
             <GithubRepoForm />
           </Content>
@@ -70,11 +57,9 @@ export function Features() {
           <Content>
             <SubTitle>Next Generation CSS</SubTitle>
             <P>
-              Write composable CSS that’s co-located with your components for
-              complete modularity. Ship only the styles that are on the page for
-              the best performance. Generate application-wide styles and themes
-              for your components. Change the theme below to see how easy and
-              intuitive theming can ever be!
+              Write composable CSS that’s co-located with your components for complete modularity. Ship only the styles that are on the page
+              for the best performance. Generate application-wide styles and themes for your components. Change the theme below to see how
+              easy and intuitive theming can ever be!
             </P>
             <ThemeSwitch />
           </Content>
@@ -86,10 +71,7 @@ export function Features() {
             <P>
               {t(translations.i18nFeature.description)}
               <br />
-              <small>
-                (Only some of the features below are translated to demonstrate
-                an example)
-              </small>
+              <small>(Only some of the features below are translated to demonstrate an example)</small>
             </P>
             <LanguageSwitch />
           </Content>
@@ -102,9 +84,7 @@ export function Features() {
               {t(translations.routingFeature.description)}
               <br />
               <small>
-                Go to our{' '}
-                <Link to={process.env.PUBLIC_URL + '/notfound'}>/NotFound</Link>{' '}
-                page to see how routing works
+                Go to our <Link to={process.env.PUBLIC_URL + '/notfound'}>/NotFound</Link> page to see how routing works
               </small>
             </P>
           </Content>
@@ -127,10 +107,7 @@ export function Features() {
           <SEOIcon className="feature-icon" />
           <Content>
             <SubTitle>SEO</SubTitle>
-            <P>
-              Supports SEO (document head tags management) for search engines
-              that support indexing of JavaScript content.
-            </P>
+            <P>Supports SEO (document head tags management) for search engines that support indexing of JavaScript content.</P>
           </Content>
         </Feature>
         <Feature>
@@ -138,9 +115,8 @@ export function Features() {
           <Content>
             <SubTitle>TypeScript</SubTitle>
             <P>
-              Typescript is the key to scalability. Build self-documented code,
-              easy-to-debug code and create maintainable large applications and
-              codebases with a highly productive development experience.
+              Typescript is the key to scalability. Build self-documented code, easy-to-debug code and create maintainable large
+              applications and codebases with a highly productive development experience.
             </P>
           </Content>
         </Feature>
@@ -149,8 +125,7 @@ export function Features() {
           <Content>
             <SubTitle>Offline-First</SubTitle>
             <P>
-              The next frontier in performant web apps: availability without a
-              network connection from the instant your users load the app.
+              The next frontier in performant web apps: availability without a network connection from the instant your users load the app.
             </P>
           </Content>
         </Feature>
@@ -159,8 +134,7 @@ export function Features() {
           <Content>
             <SubTitle>Static Code Analysis</SubTitle>
             <P>
-              Focus on writing new features without worrying about formatting or
-              code quality. With the right editor setup, your code will
+              Focus on writing new features without worrying about formatting or code quality. With the right editor setup, your code will
               automatically be formatted and linted as you work.
             </P>
           </Content>

@@ -8,12 +8,7 @@ import { RepoItem } from './RepoItem';
 import { TextButton } from './components/TextButton';
 import { sliceKey, reducer, actions } from './slice';
 import { githubRepoFormSaga } from './saga';
-import {
-  selectUsername,
-  selectRepos,
-  selectLoading,
-  selectError,
-} from './selectors';
+import { selectUsername, selectRepos, selectLoading, selectError } from './selectors';
 import { LoadingIndicator } from 'app/components/LoadingIndicator';
 import { RepoErrorType } from './types';
 
@@ -55,24 +50,14 @@ export function GithubRepoForm() {
       <FormGroup onSubmit={onSubmitForm}>
         <FormLabel>Github Username</FormLabel>
         <InputWrapper>
-          <Input
-            type="text"
-            placeholder="Type any Github username"
-            value={username}
-            onChange={onChangeUsername}
-          />
+          <Input type="text" placeholder="Type any Github username" value={username} onChange={onChangeUsername} />
           {isLoading && <LoadingIndicator small />}
         </InputWrapper>
       </FormGroup>
       {repos?.length > 0 ? (
         <List>
           {repos.map(repo => (
-            <RepoItem
-              key={repo.id}
-              name={repo.name}
-              starCount={repo.stargazers_count}
-              url={repo.html_url}
-            />
+            <RepoItem key={repo.id} name={repo.name} starCount={repo.stargazers_count} url={repo.html_url} />
           ))}
         </List>
       ) : error ? (

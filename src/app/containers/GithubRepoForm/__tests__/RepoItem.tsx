@@ -2,8 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { RepoItem } from '../RepoItem';
 
-const renderRepoItem = (props: Parameters<typeof RepoItem>[number]) =>
-  render(<RepoItem {...props} />);
+const renderRepoItem = (props: Parameters<typeof RepoItem>[number]) => render(<RepoItem {...props} />);
 
 describe('<RepoItem />', () => {
   it('should match the snapshot', () => {
