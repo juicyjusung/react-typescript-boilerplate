@@ -5,7 +5,8 @@ node_modules
 stats.json
 .pnp
 .pnp.js
-
+.idea
+.vscode
 # misc
 .DS_Store
 npm-debug.log*
